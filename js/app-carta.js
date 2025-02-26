@@ -73,7 +73,7 @@ navMenu.addEventListener('touchmove', (event) => {
   if (!isDown) return;
   event.preventDefault();
   const x = event.touches[0].pageX - navMenu.offsetLeft;
-  const walk = (x - startX) * 3; // Ajusta la velocidad del scroll
+  const walk = (x - startX) * 2; // Ajusta la velocidad del scroll
   navMenu.scrollLeft = scrollLeft - walk;
 });
 

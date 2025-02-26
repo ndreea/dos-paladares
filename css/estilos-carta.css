@@ -48,7 +48,7 @@ body {
     -ms-overflow-style: none; /* Oculta la barra de desplazamiento en IE/Edge */
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en iOS */
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 /* Oculta la barra de desplazamiento en Chrome y Safari */
@@ -389,5 +389,16 @@ body {
 
     .footer ul li a {
         font-size: 1.5rem;
+    }
+}
+
+/* Móvil */
+@media (max-width: 465px) {
+    .nav .nav-contenedor .nav-menu .btn {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-focaccias .focaccia .titulo {
+        display: block;
     }
 }

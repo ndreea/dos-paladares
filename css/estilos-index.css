@@ -39,7 +39,7 @@ body::before {
 
 /* Contenedor principal */
 .contenedor {
-    max-width: 90%;
+    max-width: 100%;
     width: 1200px;
     padding: 25px;
 }
@@ -100,7 +100,7 @@ body::before {
 .contenedor .footer .datos span {
     font-size: 1.2rem;
     opacity: 0.85;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .contenedor .footer .datos .links {
@@ -123,9 +123,6 @@ body::before {
 
 /* Responsive Tablet */
 @media (max-width: 820px) {
-    .contenedor {
-        max-width: 90%;
-    }
 
     .contenedor .header h1 {
         font-size: 3rem;
@@ -147,9 +144,6 @@ body::before {
 
 /* Responsive Móvil */
 @media (max-width: 500px) {
-    .contenedor {
-        max-width: 95%;
-    }
 
     .contenedor .header img {
         width: 25vw;
@@ -196,11 +190,11 @@ body::before {
     }
 
     .contenedor .footer .datos .horario {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .contenedor .footer .datos .nota,
     .contenedor .footer .datos span {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }

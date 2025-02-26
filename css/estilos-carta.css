@@ -401,4 +401,8 @@ body {
     .contenedor-focaccias .focaccia .titulo {
         display: block;
     }
+
+    .footer p {
+        text-align: center;
+    }
 }

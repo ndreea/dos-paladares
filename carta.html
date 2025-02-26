@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta | Dos Paladares</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="stylesheet" href="css/estilos-carta.css">
+    <script defer src="https://kit.fontawesome.com/647f2bc6f3.js" crossorigin="anonymous"></script>
+    <script defer src="js/app-carta.js"></script>
+</head>
+<body>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="nav">
+        <div class="nav-contenedor">
+            <a class="logo" href="index.html"><img src="img/logo-letra.png" alt="Logo horizontal de la cafetería Dos Paladares en color blanco" width="250px"></a>
+            <div class="nav-menu">
+                <div class="menu-scroll"> <!-- Con este div controlamos el desplazamiento horizontal-->
+                    <a class="btn active" href="#helados">helados</a>
+                    <a class="btn" href="#postres">postres</a>
+                    <a class="btn" href="#cuchareables">cuchareables</a>
+                    <a class="btn" href="#pizzas">pizzas</a>
+                    <a class="btn" href="#sanguches">sánguches</a>
+                    <a class="btn" href="#empanadas">empanadas</a>
+                    <a class="btn" href="#bebidas">bebidas</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CUERPO DE LA PÁGINA -->
+    <div class="carta">
+
+        <!--Sección Helados-->
+        <section class="productos active" id="helados">
+            <div class="contenedor">
+                <div class="producto">
+                    <img src="img/helado-galleta-chocochips.png" alt="Helado artesanal de galleta Chocochips con trozos de chocolate" loading="lazy">
+                    <h1>Galleta Chocochips</h1>
+                    <p>Cremoso helado acompañado de crujientes trocitos de galleta de chocolate. Servido en tarrina.</p>
+                    <span class="precio">S/. 12.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/helado-cookies-cream.png" alt="Helado cremoso de Cookies & Cream con trozos de galleta Óreo" loading="lazy">
+                    <h1>Cookies & Cream</h1>
+                    <p>Cremoso helado con trozos de galleta Óreo, ideal para los amantes de las texturas. Servido en tarrina.</p>
+                    <span class="precio">S/. 12.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/helado-torta-chocolate.png" alt="Helado de Torta de Chocolate con intenso sabor a cacao" loading="lazy">
+                    <h1>Torta de Chocolate</h1>
+                    <p>Intensamente chocolatoso, para los amantes del chocolate, con un toque de cacao en cada bocado. Servido en tarrina.</p>
+                    <span class="precio">S/. 12.00</span>
+                </div>  
+                <div class="producto">
+                    <img src="img/helado-banana-puding.png" alt="Helado de Banana Pudding con trozos de galleta y plátan" loading="lazy">
+                    <h1>Banana Pudding</h1>
+                    <p>Suave helado con el dulzor natural del plátano, inspirado en el clásico postre Banana Pudding. Servido en tarrina.</p>
+                    <span class="precio">S/. 12.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/helado-cheescake-frutos-rojos.png" alt="Helado de Cheesecake de Frutos Rojos con base de galleta" loading="lazy">
+                    <h1>Cheescake de Frutos Rojos</h1>
+                    <p>La combinación perfecta de cheesecake con el toque ácido de los frutos rojos. Servido en tarrina.</p>
+                    <span class="precio">S/. 12.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/helado-pie-limon.png" alt="Helado de Pie de Limón con un equilibrio entre acidez y dulzura" loading="lazy">
+                    <h1>Pie de Limón</h1>
+                    <p>El equilibrio perfecto entre dulzura y acidez, inspirado en el clásico pie de limón. Servido en tarrina</p>
+                    <span class="precio">S/. 12.00</span>
+                </div>
+                <div class="producto ultimo">
+                    <img src="img/helado-lucuma.png" alt="Helado de Lúcuma cremoso con el auténtico sabor andino" loading="lazy">
+                    <h1>Lúcuma</h1>
+                    <p>Exquisito y cremoso helado con el sabor inconfundible de la lúcuma, una joya de los Andes. Servido en tarrina.</p>
+                    <span class="precio">S/. 8.00</span>
+                </div>
+                <div class="producto ultimo">
+                    <img src="img/helado-maracuya-fresa.png" alt="Helado de Maracuyá con Fresa, una combinación tropical refrescante" loading="lazy">
+                    <h1>Maracuyá con Fresa</h1>
+                    <p>Exótica combinación de maracuyá con fresa, una fusión perfecta de dulzura y acidez tropical. Servido en tarrina.</p>
+                    <span class="precio">S/. 8.00</span>
+                </div>
+            </div>
+        </section>
+
+        <!--Sección Postres-->
+        <section class="productos" id="postres">
+            <div class="contenedor">
+                <div class="producto">
+                    <img src="img/tarta-queso-vasca.png" alt="Trozo de tarta de queso vasca con superficie caramelizada y textura cremosa." loading="lazy">
+                    <h1>Tarta de Queso Vasca</h1>
+                    <p>Deliciosa tarta de queso al estilo vasco, con un interior cremoso y una superficie ligeramente caramelizada.</p>
+                    <span class="precio">S/. 18.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/torta-chocolate.png" alt="Torta de chocolate húmeda con ganache de chocolate oscuro." loading="lazy">
+                    <h1>Torta de Chocolate</h1>
+                    <p>Pastel húmedo y rico en sabor a chocolate, cubierto con una capa de ganache que intensifica su sabor.</p>
+                    <span class="precio">S/. 12.50</span>
+                </div>
+                <div class="producto">
+                    <img src="img/galleta-chocochips.png" alt="Galleta casera de vainilla con chips de chocolate crujientes." loading="lazy">
+                    <h1>Galleta de Chocochips</h1>
+                    <p>Clásica galleta de vainilla con bordes crujientes y centro suave, repleta de chips de chocolate.</p>
+                    <span class="precio">S/. 6.00</span>
+                </div>  
+                <div class="producto">
+                    <img src="img/crema-volteada.png" alt="Postre peruano de crema volteada con caramelo dorado y textura suave." loading="lazy">
+                    <h1>Crema Volteada</h1>
+                    <p>Clásico postre peruano similar al flan, con una textura suave y un caramelo dorado que realza su dulzura.</p>
+                    <span class="precio">S/. 11.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/crookie-chocochips.png" alt="Crookie de chocochips, fusión de croissant y galleta con chocolate." loading="lazy">
+                    <h1>Crookie de Chocochips</h1>
+                    <p>Fusión de croissant y cookie, rellena de trozos de chocolate. Toda una textura crujiente por fuera y suave por dentro.</p>
+                    <span class="precio">S/. 13.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/keke-limon.png" alt="Trozo de keke de limón esponjoso con un toque cítrico refrescante." loading="lazy">
+                    <h1>Keke de Limón</h1>
+                    <p>Bizcocho esponjoso con un refrescante sabor a limón, ideal para acompañar con una taza de té o café.</p>
+                    <span class="precio">S/. 8.00</span>
+                </div>  
+                <div class="producto">
+                    <img src="img/budin-frutos-rojos.png" alt="Budín casero con frutos rojos y balance entre dulzura y acidez." loading="lazy">
+                    <h1>Budín de Frutos Rojos</h1>
+                    <p>Esponjoso budín enriquecido con una mezcla de frutos rojos, ofreciendo un equilibrio entre dulzura y acidez.</p>
+                    <span class="precio">S/. 11.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/galleta-chocochips.png" alt="Barra de galleta con chips de chocolate y nueces, ideal para un snack dulce." loading="lazy">
+                    <h1>Cookie Bar</h1>
+                    <p>Barra de galleta densa y rica, cargada de chips de chocolate y nueces, perfecta para un antojo dulce.</p>
+                    <span class="precio">S/. 12.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/brownie-chocolate.png" alt="Brownie de chocolate denso con capa crujiente y centro fudgy." loading="lazy">
+                    <h1>Brownie</h1>
+                    <p>Denso y fudgy pastel de chocolate, con una capa superior ligeramente crujiente y un interior húmedo.</p>
+                    <span class="precio">S/. 10.00</span>
+                </div>  
+                <div class="producto">
+                    <img src="img/crookie-doble-chocolate.png" alt="Crookie de doble chocolate con masa crujiente y relleno cremoso." loading="lazy">
+                    <h1>Crookie Doble Chocolate</h1>
+                    <p>Combinación de croissant y cookie, rellena de intenso chocolate doble, ideal para los amantes del cacao.</p>
+                    <span class="precio">S/. 13.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/galleta-doble-chocolate.png" alt="Galleta de chocolate con trozos extra de chocolate derretido." loading="lazy">
+                    <h1>Galleta Doble Chocolate</h1>
+                    <p>Galleta suave y masticable, elaborada con masa de chocolate y salpicada de trozos de chocolate adicionales.</p>
+                    <span class="precio">S/. 6.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/galleta-avena.png" alt="Galleta de avena con miel y textura masticable, perfecta para un antojo saludable." loading="lazy">
+                    <h1>Galleta de Avena</h1>
+                    <p>Galleta nutritiva y deliciosa, elaborada con avena y un toque de miel, ofreciendo una textura masticable.</p>
+                    <span class="precio">S/. 6.00</span>
+                </div>  
+            </div>
+            <div class="contenedor">
+                <div class="producto">
+                    <img src="img/alfajor.png" alt="Alfajor relleno de dulce de leche, espolvoreado con azúcar glas." loading="lazy">
+                    <h1>Alfajor Clásico</h1>
+                    <p>Tradicional dulce compuesto por dos galletas suaves, rellenas de dulce de leche y espolvoreadas con azúcar glas.</p>
+                    <span class="precio">S/. 7.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/carrot-cake.png" alt="Pastel de zanahoria especiado con glaseado de queso crema y nueces." loading="lazy">
+                    <h1>Carrot Cake</h1>
+                    <p>Pastel de zanahoria especiado, con una miga húmeda y cubierto con un glaseado de queso crema.</p>
+                    <span class="precio">S/. 15.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/pie-limon.png" alt="Trozo de pie de limón con base de galleta y merengue dorado." loading="lazy">
+                    <h1>Pie de Limón</h1>
+                    <p>Base crujiente de galleta, rellena de una crema de limón suave y cubierta de merengue.</p>
+                    <span class="precio">S/. 15.00</span>
+                </div>  
+                <div class="producto ultimo">
+                    <img src="img/crocante-manzana.png" alt="Postre de manzana horneada con cobertura crujiente de avena y azúcar moreno." loading="lazy">
+                    <h1>Crocante de Manzana</h1>
+                    <p>Postre que combina manzanas horneadas con una cobertura crujiente de avena y azúcar moreno.</p>
+                    <span class="precio">S/. 13.00</span>
+                </div>
+            </div>
+        </section>
+
+        <!--Sección Cuchareables-->
+        <section class="productos" id="cuchareables">
+            <div class="contenedor">
+                <div class="producto ultimo">
+                    <img src="img/cuchara-choco-lucuma.png" alt="Tarrina de postre cremoso de lúcuma y chocolate, combinación de sabores peruanos." loading="lazy">
+                    <h1>Choco-Lúcuma</h1>
+                    <p>Deliciosa combinación de chocolate y lúcuma en un postre cremoso que resalta los sabores peruanos.</p>
+                    <span class="precio">S/. 17.00</span>
+                </div>
+                <div class="producto ultimo">
+                    <img src="img/cuchara-tiramisu.png" alt="Tarrina de tiramisú con crema de mascarpone, bizcocho de café y cacao espolvoreado." loading="lazy">
+                    <h1>Tiramisú</h1>
+                    <p>Clásico postre italiano con bizcocho empapado en café y crema de mascarpone, espolvoreado con cacao.</p>
+                    <span class="precio">S/. 16.00</span>
+                </div>
+                <div class="producto ultimo">
+                    <img src="img/cuchara-selva-negra.png" alt="Tarrina de pastel Selva Negra con capas de chocolate, crema y cerezas." loading="lazy">
+                    <h1>Selva Negra</h1>
+                    <p>Pastel de chocolate relleno de crema y cerezas, decorado con virutas de chocolate y más cerezas.</p>
+                    <span class="precio">S/. 16.00</span>
+                </div>  
+            </div>
+        </section>
+
+        <!--Sección Pizzas-->
+        <section class="productos" id="pizzas">
+
+            <!--Focaccias-->
+            <div class="contenedor-focaccias">
+                <article class="focaccia">
+                    <div class="titulo">
+                        <h2>Focaccia al Ajo</h2>
+                        <span class="costo">S/. 10.00</span>
+                    </div>
+                    <p>Cuatro trozos de focaccia horneados, cubiertos con una deliciosa mantequilla de ajo.</p>
+                </article>
+                <article class="focaccia">
+                    <div class="titulo">
+                        <h2>Focaccia Especial</h2>
+                        <span class="costo">S/. 12.00</span>
+                    </div>
+                    <p>Cuatro trozos de focaccia horneados con mantequilla de ajo y una capa de queso derretido para un toque extra de sabor.</p>
+                </article>
+            </div>
+
+            <!--Pizzas-->
+            <div class="contenedor">
+                <div class="producto">
+                    <img src="img/pizza-americana.png" alt="Pizza con salsa de tomate, queso fundido y jamón sobre masa artesanal." loading="lazy">
+                    <h1>Pizza Americana</h1>
+                    <p>Clásica pizza con base de salsa de tomate, queso fundido y jamón, ofreciendo un sabor tradicional que nunca falla.</p>
+                    <div class="precios">
+                        <span class="tamanio">MEDIA</span>
+                        <span class="costo">S/. 22.00</span>
+                    </div>
+                    <div class="precios">
+                        <span class="tamanio">ENTERA</span>
+                        <span class="costo">S/. 40.00</span>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="img/pizza-caprese-peperoni.png" alt="Pizza con rodajas de tomate fresco, queso derretido y pesto sobre salsa de tomate." loading="lazy">
+                    <h1>Pizza Caprese</h1>
+                    <p>Delicioso queso, rodajas frescas de tomate y pesto sobre una base de salsa de tomate, inspirada en la ensalada italiana.</p>
+                    <div class="precios">
+                        <span class="tamanio">MEDIA</span>
+                        <span class="costo">S/. 22.00</span>
+                    </div>
+                    <div class="precios">
+                        <span class="tamanio">ENTERA</span>
+                        <span class="costo">S/. 40.00</span>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="img/pizza-hawaiiana.png" alt="Pizza con jamón, queso fundido y trozos de piña sobre salsa de tomate." loading="lazy">
+                    <h1>Pizza Hawaiiana</h1>
+                    <p>Mezcla de queso, jamón y trocitos de piña sobre salsa de tomate, brindando un equilibrio perfecto entre dulce y salado.</p>
+                    <div class="precios">
+                        <span class="tamanio">MEDIA</span>
+                        <span class="costo">S/. 23.00</span>
+                    </div>
+                    <div class="precios">
+                        <span class="tamanio">ENTERA</span>
+                        <span class="costo">S/. 43.00</span>
+                    </div>
+                </div> 
+                <div class="producto">
+                    <img src="img/pizza-vegetariana.png" alt="Pizza con pimientos, champiñones, cebolla blanca y aceitunas verdes sobre salsa de tomate y queso." loading="lazy">
+                    <h1>Pizza Vegetariana</h1>
+                    <p>Pimiento, cebolla blanca, aceitunas verdes y champiñones, acompañados de queso y salsa de tomate, ideal para los amantes de las verduras.</p>
+                    <div class="precios">
+                        <span class="tamanio">MEDIA</span>
+                        <span class="costo">S/. 23.00</span>
+                    </div>
+                    <div class="precios">
+                        <span class="tamanio">ENTERA</span>
+                        <span class="costo">S/. 43.00</span>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="img/pizza-caprese-peperoni.png" alt="Pizza con rodajas de pepperoni crujiente, queso fundido y salsa de tomate." loading="lazy">
+                    <h1>Pizza Pepperoni</h1>
+                    <p>Clásica pizza con abundante pepperoni sobre una capa de queso derretido y salsa de tomate, perfecta para los amantes de los sabores intensos.</p>
+                    <div class="precios">
+                        <span class="tamanio">MEDIA</span>
+                        <span class="costo">S/. 23.00</span>
+                    </div>
+                    <div class="precios">
+                        <span class="tamanio">ENTERA</span>
+                        <span class="costo">S/. 43.00</span>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="img/pizza-chicken-bbq.png" alt="Pizza con pollo crispy, salsa barbacoa, queso derretido y salsa especial 2080." loading="lazy">
+                    <h1>Pizza Chicken BBQ</h1>
+                    <p>Deliciosa combinación de queso, trozos de chicken tenders, salsa barbacoa y la especial salsa 2080, ofreciendo una explosión de sabores en cada bocado.</p>
+                    <div class="precios">
+                        <span class="tamanio">MEDIA</span>
+                        <span class="costo">S/. 27.00</span>
+                    </div>
+                    <div class="precios">
+                        <span class="tamanio">ENTERA</span>
+                        <span class="costo">S/. 51.00</span>
+                    </div>
+                </div>  
+            </div>
+            <p class="nota">Todas nuestras pizzas están disponibles en dos tamaños: media (4 pedazos) y entera (8 pedazos), adaptándose a tus necesidades.</p>
+        </section>
+
+        <!--Sección Sanguches-->
+        <section class="productos" id="sanguches">
+            <div class="contenedor">
+                <div class="producto">
+                    <img src="img/croissant-pollo.png" alt="Sánguche de croissant con jamón y queso derretido, opción de mayonesa y mostaza." loading="lazy">
+                    <h1>Croissant Mixto</h1>
+                    <p>Sánguche de jamón y queso, con la opción de añadir una mezcla de mayonesa y mostaza, servido en un croissant fresco y crujiente.</p>
+                    <span class="precio">S/. 13.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/croissant-pollo.png" alt="Croissant relleno de pollo deshilachado, piña en cubos, pecanas y mayonesa con mostaza." loading="lazy">
+                    <h1>Croissant con Pollo</h1>
+                    <p>Sánguche de pollo deshilachado, piña en cubos, pecanas picadas y una mezcla de mayonesa y mostaza, servido en un croissant fresco y crujiente.</p>
+                    <span class="precio">S/. 14.50</span>
+                </div>
+                <div class="producto">
+                    <img src="img/croissant-pollo.png" alt="Sándwich de brioche con jamón, queso fundido y opción de mayonesa y mostaza." loading="lazy">
+                    <h1>Brioche Mixto</h1>
+                    <p>Este sánguche combina jamón y queso con la opción de mayonesa y mostaza, servido en un pan brioche suave y esponjoso.</p>
+                    <span class="precio">S/. 13.00</span>
+                </div>  
+                <div class="producto">
+                    <img src="img/focaccia-vegetariana.png" alt="Sánguche de focaccia con jamón, queso derretido y mantequilla de hierbas." loading="lazy">
+                    <h1>Focaccia Mixta</h1>
+                    <p>Este ságuche incluye jamón y queso, acompañados de mantequilla de hierbas y, opcionalmente, mayonesa y mostaza, todo ello servido en una focaccia.</p>
+                    <span class="precio">S/. 16.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/focaccia-vegetariana.png" alt="Focaccia con queso, rodajas de tomate fresco, pesto y mantequilla de hierbas, estilo italiano." loading="lazy">
+                    <h1>Focaccia Caprese</h1>
+                    <p>Inspirado en la ensalada Caprese, este sánguche contiene queso, rodajas de tomate fresco, pesto y mantequilla de hierbas, servido en una focaccia.</p>
+                    <span class="precio">S/. 16.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/focaccia-vegetariana.png" alt="Sánguche de focaccia con champiñones, pimientos grillados, palta, alioli y queso." loading="lazy">
+                    <h1>Focaccia Vegetariana</h1>
+                    <p>Este sánguche vegetariano incluye queso, champiñones y pimientos grillados, rodajas de palta (aguacate), alioli y mantequilla de hierbas, servido en una focaccia.</p>
+                    <span class="precio">S/. 20.00</span>
+                </div>
+                <div class="producto ultimo">
+                    <img src="img/focaccia-jamon-pina.png" alt="Focaccia con jamón ahumado, mermelada de piña, queso y mantequilla de hierbas.a" loading="lazy">
+                    <h1>Focaccia de Jamón ahumado & Piña</h1>
+                    <p>Sánguche de jamón ahumado, mermelada de piña, queso, mantequilla de hierbas y una mezcla de mayonesa y mostaza, servido en una focaccia.</p>
+                    <span class="precio">S/. 18.00</span>
+                </div> 
+            </div>
+        </section>  
+        
+        <!--Sección Empanadas-->
+        <section class="productos" id="empanadas">
+            <div class="contenedor">
+                <div class="producto">
+                    <img src="img/empanada-mixta.png" alt="Empanada horneada rellena de jamón, queso derretido y salsa bechamel en masa crujiente." loading="lazy">
+                    <h1>Empanada Mixta</h1>
+                    <p>Horneada con un relleno cremoso de jamón y queso, combinados con una suave salsa bechamel, creando una experiencia reconfortante dentro de una masa dorada y crujiente.</p>
+                    <span class="precio">S/. 12.00</span>
+                </div>
+                <div class="producto">
+                    <img src="img/empanada-carne.png" alt="Empanada de carne mechada jugosa con especias, horneada en masa dorada y crujiente." loading="lazy">
+                    <h1>Empanada de Carne</h1>
+                    <p>Clásica y llena de sabor, esta empanada horneada está rellena con carne mechada jugosa, su interior tierno y especiado se complementa con la textura crujiente de la masa dorada.</p>
+                    <span class="precio">S/. 12.00</span>
+                </div>
+            </div>
+        </section>
+
+        <!--Sección Bebidas-->
+        <section class="productos" id="bebidas">
+
+            <!--Bebidas calientes-->
+            <h1 class="titulo-bebidas">Bebidas Calientes</h1>
+            <div class="contenedor">
+                <div class="producto">
+                    <h2>Espresso</h2>
+                    <p>Café concentrado de sabor intenso. Servido en taza o en vaso.</p>
+                    <span class="precio">S/. 5.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Americano</h2>
+                    <p>Café negro más suave, preparado con agua caliente. Servido en taza o en vaso.</p>
+                    <span class="precio">S/. 8.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Americano Cortado</h2>
+                    <p>Versión del Americano con un toque de leche. Servido en taza o en vaso.</p>
+                    <span class="precio">S/. 9.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Capuccino</h2>
+                    <p>Mezcla equilibrada de espresso, leche vaporizada y espuma de leche. Servido en taza o en vaso.</p>
+                    <span class="precio">S/. 10.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Latte</h2>
+                    <p>Café con leche vaporizada, más suave que el capuccino. Servido en taza o en vaso.</p>
+                    <span class="precio">S/. 11.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Chocolate Caliente</h2>
+                    <p>Bebida cremosa de chocolate fundido con leche. Servido en taza o en vaso.</p>
+                    <span class="precio">S/. 13.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Manzanilla</h2>
+                    <p>Infusión herbal relajante de flores de manzanilla. Servido en taza o en vaso.</p>
+                    <span class="precio">S/. 7.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Hierba Luisa</h2>
+                    <p>Infusión de hojas de hierba luisa, con notas cítricas. Servido en taza o en vaso.</p>
+                    <span class="precio">S/. 7.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Infusiones La Fidelia</h2>
+                    <p>Variedad de tés e infusiones; consultar sabores disponibles. Servido en taza o en vaso.</p>
+                    <span class="precio">S/. 8.50</span>
+                </div>
+            </div>
+            <p class="nota">Opcionalmente, puedes añadir un toque de vainilla o elegir leche vegetal por un costo adicional.</p>
+
+            <!--Bebidas frías-->
+            <h1 class="titulo-bebidas altura">Bebidas Frías</h1>
+            <div class="contenedor">
+                <div class="producto">
+                    <h2>Affogato</h2>
+                    <p>Postre/bebida que combina espresso con Nutella y una bola de helado. Servido en vaso.</p>
+                    <span class="precio">S/. 10.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Iced Latte</h2>
+                    <p>Café con leche servido frío, ideal para días calurosos. Servido en vaso.</p>
+                    <span class="precio">S/. 11.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Iced Tea</h2>
+                    <p>Té frío refrescante; variedad de sabores disponibles. Servido en vaso.</p>
+                    <span class="precio">S/. 9.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Jugo de Fresa</h2>
+                    <p>Jugo natural de fresas frescas. Servido en vaso.</p>
+                    <span class="precio">S/. 10.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Zumo de Naranja</h2>
+                    <p>Zumo natural recién exprimido de naranjas frescas. Servido en vaso.</p>
+                    <span class="precio">S/. 10.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Refresco de Maracuyá</h2>
+                    <p>Bebida refrescante elaborada con pulpa fresca de maracuyá. Servido en vaso.</p>
+                    <span class="precio">S/. 10.00</span>
+                </div>
+                <div class="producto ultimo">
+                    <h2>Smoothie de Fresa</h2>
+                    <p>Bebida cremosa y espesa de fresas y otros ingredientes. Servido en vaso.</p>
+                    <span class="precio">S/. 12.00</span>
+                </div>
+                <div class="producto ultimo">
+                    <h2>Sparkling de Fresa</h2>
+                    <p>Agua espumosa con gas de sabor a fresa. Servido en vaso.</p>
+                    <span class="precio">S/. 12.00</span>
+                </div>
+            </div>
+
+            <!--Bebidas con Alcohol-->
+            <h1 class="titulo-bebidas altura">Bebidas con Alcohol</h1>
+            <div class="contenedor">
+                <div class="producto">
+                    <h2>Cerveza</h2>
+                    <p>Variedad de cervezas; consultar opciones disponibles.</p>
+                    <span class="precio">S/. 13.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Tinto de Verano</h2>
+                    <p>Mezcla refrescante de vino tinto con gaseosa y hielo.</p>
+                    <span class="precio">S/. 20.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Vodka con Frutos Rojos</h2>
+                    <p>Cóctel de vodka infusionado con una selección de frutos rojos.</p>
+                    <span class="precio">S/. 25.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Gin Tonic</h2>
+                    <p>Clásico combinado de ginebra con agua tónica, servido con hielo y limón.</p>
+                    <span class="precio">S/. 25.00</span>
+                </div>
+                <div class="producto">
+                    <h2>Vodka Tonic</h2>
+                    <p>Mezcla de vodka con agua tónica, hielo y una rodaja de limón.</p>
+                    <span class="precio">S/. 25.00</span>
+                </div>
+            </div>
+            <p class="nota">Recuerda que el consumo excesivo de bebidas alcohólicas puede ser perjudicial para la salud.</p>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>¡Encuentra tu antojo y haz tu pedido en caja!</p>
+        <ul class="redes">
+            <li> <!--Facebook-->
+                <a href="https://www.facebook.com/people/Dos-Paladares/61557389427704/?mibextid=LQQJ4d" aria-label="Facebook" target="_blank" rel="noopener noreferrer" rel="nofollow"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li> <!--Instagram-->
+                <a href="https://www.instagram.com/dospaladares.pe/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" rel="nofollow"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li> <!--TikTok-->
+                <a href="https://www.tiktok.com/@dospaladares.pe" aria-label="TikTok" target="_blank" rel="noopener noreferrer" rel="nofollow"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+            </li>
+        </ul>   
+    </footer>
+</body>
+</html>

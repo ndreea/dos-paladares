@@ -1,0 +1,393 @@
+
+/* ESTILOS GLOBALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 251, 246);
+}
+
+
+/*-------------------------------------*/
+
+
+/* MENÚ DE NAVEGACIÓN */
+
+.nav {
+    background-color: #650B1E;
+    width: 100%;
+    padding: 20px 0;
+    top: 0;
+}
+
+.nav .nav-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contenedor del Menú */
+.nav .nav-contenedor .nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 100%;
+    width: auto;
+    overflow-x: scroll;
+    touch-action: pan-x;
+    white-space: nowrap; /* Evita que los elementos se vayan a la siguiente línea */
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+    -ms-overflow-style: none; /* Oculta la barra de desplazamiento en IE/Edge */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en iOS */
+    padding: 10px;
+}
+
+/* Oculta la barra de desplazamiento en Chrome y Safari */
+.nav .nav-contenedor .nav-menu::-webkit-scrollbar {
+    display: none; 
+}
+
+/* Contenedor de los botones */
+.nav .nav-contenedor .nav-menu .menu-scroll {
+    display: flex;
+    gap: 18px;
+    min-width: 100%;
+    /*padding: 10px; Activamos a llegar a dispositivos */
+}
+
+/* Botones */
+.nav .nav-contenedor .nav-menu .btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(255, 251, 246);
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background-color: transparent;
+    cursor: pointer;
+    white-space: nowrap; /* Evita que el texto se corte en varias líneas */
+}
+
+.nav .nav-contenedor .nav-menu .btn:hover,
+.nav .nav-contenedor .nav-menu .btn.active {
+    background-color: #ef5222;
+}
+
+/* Asegura que el menú inicie mostrando el primer elemento activo */
+.nav .nav-contenedor .nav-menu .btn.active {
+    scroll-margin-left: 10px;
+}
+
+
+/*-------------------------------------*/
+
+
+/* CONTENEDOR PRINCIPAL DE LA PÁGINA */
+
+.carta {
+    overflow: hidden;
+	width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	padding: 80px 0;
+    position: relative;
+    display: none;
+}
+
+/* Activamos la sección cada vez que se haga click en el menú */
+.productos.active {
+    display: block;
+}
+
+/* Grid de 3 columnas iguales */
+.productos .contenedor {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.productos .contenedor .producto {
+    text-align: center;
+    color: #650B1E;
+}
+
+/* Imagen del producto (General) */
+.productos .contenedor .producto img {
+    width: 100%; 
+    max-width: 300px;
+    height: 300px;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Título de los Productos (General) */
+.productos .contenedor .producto h1 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #650B1E;
+}
+
+/* Texto descriptivo (General) */
+.productos .contenedor .producto p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 5px 0 15px 0;
+    color: #650b1fd6;
+    font-weight: 400;
+}
+
+/* Precio productos (General) */
+.productos .contenedor .producto .precio {
+    font-weight: bold;
+    color: #ef5222;
+    font-size: 1.3rem;
+}
+
+/* Estilos Pizzas (precios) */
+.precios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 200px;
+    margin: 5px auto;
+    padding: 5px 10px;
+}
+
+.precios .tamanio {
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ef5222;
+}
+
+.precios .costo {
+    font-weight: bold;
+    color: #ef5222;
+    font-size: 1.3rem;
+}
+
+/* Estilos Focaccias (dentro de la sección de Pizzas) */
+.contenedor-focaccias {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(242, 227, 213);
+    padding: 30px 40px;
+    border-radius: 26px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    color: #650B1E;
+    box-shadow: 0 2px 5px 0 rgba(25, 25, 25, 0.15); /* Sutil sombra para destacar */
+    margin-bottom: 80px;
+}
+
+.contenedor-focaccias .focaccia .titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-focaccias .focaccia .costo {
+    font-weight: bold;
+    color: #ef5222;
+    font-size: 1.2rem;
+}
+
+.contenedor-focaccias .focaccia p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* Nota sección Pizzas y Bebidas */
+.nota {
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: 500;
+    color: #650B1E;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid #ef5222;
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 80px;
+}
+
+/* Estilos Bebidas (Títulos y subtítulos)*/
+.titulo-bebidas {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center; 
+    color: #5b0c0c;
+    margin: 0 auto 2rem auto;
+    border-bottom: 3px solid #b22222; 
+    padding-bottom: 3px;
+    display: block;
+    max-width: 1200px;
+}
+
+
+.productos .contenedor .producto h2 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #650B1E;
+}
+
+
+/* Añadimos padding títulos de la primera fila */
+.titulo-bebidas.altura {
+    padding-top: 80px;
+}
+
+/* Quitamos el padding inferior a los productos de la última fila */
+.productos .contenedor .producto.ultimo { 
+    padding-bottom: 0;
+}
+
+
+/*-------------------------------------*/
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	padding: 30px;
+    width: 100%;
+    bottom: 0;
+	background-color: #650B1E;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(255, 251, 246);
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footer ul li {
+    list-style: none;
+    
+}
+
+/* Iconos redes sociales */
+.footer ul li a {
+    font-size: 1.6rem;
+    color: rgb(255, 251, 246);
+}
+
+.footer ul li a:hover {
+    color: #ef5222;
+}
+
+
+/* RESPONSIVE */
+
+/* Ordenador */
+@media (max-width: 1230px) {
+    .carta {
+        width: 90%;
+    }
+
+    .productos .contenedor {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    }
+
+}
+
+/* Ordenador */
+@media (max-width: 1190px) {
+    .productos .contenedor {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        gap: 60px;
+        margin: 0 auto;
+    }
+
+    .productos .contenedor .producto.primero {
+        padding-top: 0px;
+    }
+}
+
+/* Ordenador - Tablet */
+@media (max-width: 950px) {
+
+    .nav {
+        position: sticky;
+        z-index: 1000;
+    }
+
+    .productos .contenedor {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        gap: 60px;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet */
+@media (max-width: 880px) {
+    .contenedor-focaccias {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Tablet - Móvil */
+@media (max-width: 768px) {
+    .carta {
+        width: 85%;
+    }
+
+      .nav .nav-contenedor .nav-menu .menu-scroll {
+        gap: 10px;
+    }
+
+    .productos .contenedor {
+        grid-template-columns: repeat(1, 1fr); /* Una sola columna en móviles */
+        gap: 60px; 
+    }
+
+    .footer p {
+        font-size: 1.1rem;
+    }
+
+    .footer ul li a {
+        font-size: 1.5rem;
+    }
+}

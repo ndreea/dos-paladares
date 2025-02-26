@@ -196,11 +196,11 @@ body::before {
     }
 
     .contenedor .footer .datos .horario {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .contenedor .footer .datos .nota,
     .contenedor .footer .datos span {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }

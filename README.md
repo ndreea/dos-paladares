@@ -1,4 +1,4 @@
-# Carta Digital - Cafetería Dos Paladares ☕️
+# Cafetería Dos Paladares - Carta Digital ☕️
 Este repositorio contiene el rediseño de una página web responsive completa, desarrollado como proyecto personal. La estructura y el diseño se han realizado utilizando solo HTML, CSS y JS.
 
 ## 📌 Descripción
